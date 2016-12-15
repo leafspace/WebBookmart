@@ -14,7 +14,8 @@ public class MyDB {
 	
 	private static void getConnection() {
 		try {
-			String url = "jdbc:mysql://192.168.1.128:3306/" + dbName + "?user=" + userName + "&password=" + userPassword;
+			String url = "jdbc:mysql://192.168.1.128:3306/" + dbName + "?useUnicode=true&characterEncoding=utf8
+&user=" + userName + "&password=" + userPassword;
 			Class.forName(driverName);                                         //加载数据库驱动程序类
 			connection = DriverManager.getConnection(url);                     //获取数据库链接
 		} catch (ClassNotFoundException e) {
