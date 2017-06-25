@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Clouds favorites.iml" filepath="$PROJECT_DIR$/Clouds favorites.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m_test_InitPage/m_test_InitPage.iml" filepath="$PROJECT_DIR$/m_test_InitPage/m_test_InitPage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m_test_ManagePage/m_test_ManagePage.iml" filepath="$PROJECT_DIR$/m_test_ManagePage/m_test_ManagePage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m_test_Simple/m_test_Simple.iml" filepath="$PROJECT_DIR$/m_test_Simple/m_test_Simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m_test_UserPage/m_test_UserPage.iml" filepath="$PROJECT_DIR$/m_test_UserPage/m_test_UserPage.iml" />
+    </modules>
+  </component>
+</project>

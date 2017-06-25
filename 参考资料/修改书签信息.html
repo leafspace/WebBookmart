@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function disp_prompt(){
+            var websiteName = prompt("请输入书签名","");
+            if(websiteName == ""){
+                alert("书签名不可为空");
+                websiteName = prompt("请输入书签名","");
+            }
+            var website = prompt("请输入书签地址","");
+            if(website == ""){
+                alert("书签地址不可为空");
+                website = prompt("请输入书签地址","");
+            }
+            document.getElementById("websiteName").value=websiteName;
+            document.getElementById("website").value=website;
+        }
+        </script>
+        </head>
+    <body>
+        <form>
+            <input type="text" id="websiteName" name="websiteName" value="" />
+            <input type="text" id="website" name="website" value="" />
+        </form>
+        <script>
+            disp_prompt();
+        </script>
+    </body>
+</html>

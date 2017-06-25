@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <listener>
+        <listener-class>cn.cslg.WebBookmart.Listener.SessionListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>doEncodeFilter</filter-name>
+        <filter-class>cn.cslg.WebBookmart.Filter.EncodeFilter</filter-class>
+        <init-param>
+            <param-name>characterEncoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>doEncodeFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>goLogin</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.LoginCertification</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goLogin</servlet-name>
+        <url-pattern>/goLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goRegister</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.RegisterCertification</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goRegister</servlet-name>
+        <url-pattern>/goRegister</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>upVip</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.UpVip</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upVip</servlet-name>
+        <url-pattern>/upVip</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChangeShowing</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.ChangeShowing</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeShowing</servlet-name>
+        <url-pattern>/ChangeShowing</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignOut</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.SignOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignOut</servlet-name>
+        <url-pattern>/SignOut</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WebsiteHandle</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.WebsiteHandle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WebsiteHandle</servlet-name>
+        <url-pattern>/WebsiteHandle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClassificationHandle</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.ClassificationHandle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClassificationHandle</servlet-name>
+        <url-pattern>/ClassificationHandle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserChangeShowing</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.UserChangeShowing</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserChangeShowing</servlet-name>
+        <url-pattern>/UserChangeShowing</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserHandle</servlet-name>
+        <servlet-class>cn.cslg.WebBookmart.servlet.UserHandle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserHandle</servlet-name>
+        <url-pattern>/UserHandle</url-pattern>
+    </servlet-mapping>
+</web-app>
